@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="carol blender with animations (1).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.png" shadow-intensity="1" camera-orbit="26.69deg 180deg 0.1174m" field-of-view="30deg" auto-rotate>
+      <button class="Hotspot" slot="hotspot-5" data-surface="3 0 21 18 20 0.238 0.583 0.179" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Casing</div>
+      </button><button class="Hotspot" slot="hotspot-6" data-surface="3 0 84 90 95 0.183 0.763 0.054" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Plane</div>
+      </button><button class="Hotspot" slot="hotspot-7" data-surface="3 0 95 92 94 0.125 0.290 0.585" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Base Acrylic</div>
+      </button><button class="Hotspot" slot="hotspot-8" data-surface="0 0 126 127 128 0.553 0.003 0.445" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Base Stand</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </body>
+</html>
